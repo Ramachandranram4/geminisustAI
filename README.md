@@ -174,3 +174,18 @@ Built entirely on Gemini 3
 Multilingual inclusivity by design
 
 Hackathon-ready, scalable architecture
+
+🔮 What’s Next
+
+Predictive disaster analytics
+
+Integration with government dashboards
+
+AI-driven evacuation planning
+
+City-level deployment pilots
+
+📜 License
+
+SustAInxt
+A Sustainable AI Initiative for Smarter Cities
