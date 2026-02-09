@@ -1,120 +1,91 @@
-SustAInxt 🌱🚨
-AI-Powered Sustainable Urban Emergency Intelligence Platform
+SustAInxt 🚨
+AI-Powered Sustainable Emergency Intelligence Platform (Built on Gemini 3)
 
-Built entirely using Google Gemini 3
+SustAInxt is a next-generation AI-driven emergency detection and response platform designed to help cities respond faster, smarter, and more sustainably during disasters. Built entirely using Google Gemini 3 models, SustAInxt transforms citizen-generated media into real-time situational intelligence, multilingual guidance, and automated authority alerts.
 
-📌 Overview
+SustAInxt = Sustainable AI + Next-Generation Emergency Response
 
-SustAInxt is an end-to-end AI-powered emergency intelligence platform designed to help smart cities detect, analyze, and respond to urban incidents in real time.
-Using Google Gemini 3 as the sole AI foundation, SustAInxt transforms citizen-reported images and videos into actionable emergency intelligence, enabling faster, more sustainable, and multilingual responses.
+🌍 Problem Statement
 
-The platform aligns with UN SDG-11 (Sustainable Cities & Communities) by optimizing emergency response, reducing resource wastage, and improving urban resilience.
+In emergency situations, minutes matter — yet today’s response systems are:
 
-💡 Inspiration
+Reactive instead of predictive
 
-Food deliveries reach doorsteps in minutes — but emergency responses still rely on slow, manual workflows.
-We asked a simple question:
+Manual and operator-dependent
 
-“If logistics can be optimized in minutes, why not emergency response?”
+Language-restricted
 
-SustAInxt was inspired by this gap and built to ensure faster, smarter, and more sustainable emergency coordination, especially in densely populated cities.
+Fragmented across agencies
 
-🎯 What It Does
+While food and services are delivered within minutes, emergency response still relies on delayed human reporting. SustAInxt bridges this gap using AI-first automation, aligned with UN Sustainable Development Goals (SDG 11 & SDG 12).
 
-Detects real-world incidents (fire, flood, accidents, hazards) from images/videos
+💡 Solution Overview
 
-Assesses severity using AI reasoning
+SustAInxt enables citizens to upload images or videos of incidents (fire, flood, accident, etc.).
+Gemini 3 analyzes the situation, determines severity, generates multilingual guidance, visualizes the incident on a live map, and alerts authorities — all in real time.
 
-Provides situational awareness and safety guidance
+✨ Key Features
 
-Automatically adapts responses to regional languages
+Vision-AI Incident Detection
+Detects fires, floods, accidents, and hazards from images/videos using Gemini 3 Vision.
 
-Visualizes incidents on live maps
+AI-Based Severity Assessment
+Automatically classifies incidents as Low, Medium, or High risk.
 
-Dispatches AI-generated alerts to emergency authorities
+Multilingual Situational Intelligence
+Delivers safety instructions in native regional languages (Tamil, Kannada, Hindi, etc.).
 
-All of this is achieved using Gemini 3 multimodal intelligence.
+Live GIS Mapping
+Displays incidents, severity zones, and nearby emergency resources using OpenStreetMap.
 
-🛠️ How We Built It (Gemini 3–Only)
+Automated Authority Alerts
+Sends AI-generated alerts (text/voice ready) to emergency responders.
 
-SustAInxt is built with a single, unified AI stack:
-
-Gemini 3 Vision → Incident detection & severity analysis
-
-Gemini 3 Multimodal Reasoning → Context + GPS + risk understanding
-
-Gemini 3 Language Intelligence → Precautions, explanations, translations
-
-Gemini 3 TTS → AI voice alerts for authorities
-
-Google Genkit → Orchestration of all Gemini workflows
-
-No third-party AI models were used.
-
-✨ Core Features
-🔍 Incident Intelligence
-
-Vision-based detection from images/videos
-
-Severity classification (Low / Medium / High)
-
-🧠 Situational Awareness
-
-Context-aware safety instructions
-
-AI-generated action steps
-
-🌍 Multilingual Intelligence
-
-Automatic language adaptation
-
-Native script support (Tamil, Kannada, Hindi, etc.)
-
-🗺️ GIS Visualization
-
-Live OpenStreetMap integration
-
-Incident epicenter & nearby emergency units
-
-📞 Authority Dispatch
-
-AI voice & SMS alerts to emergency services
-
-Location-aware communication
-
-♻️ Sustainability Focus
-
-Reduced false alerts
-
-Optimized emergency resource usage
+Community Awareness Feed
+Shares verified incidents to improve public awareness and preparedness.
 
 🧠 Why Gemini 3?
+
+Gemini 3 is the core intelligence layer of SustAInxt.
+
 Gemini 3 Capability	How SustAInxt Uses It
-Vision Intelligence	Detects incidents from real-world media
-Multimodal Reasoning	Combines media + location + context
-Language Models	Safety guidance & explanations
-Translation	Regional and native-language output
-Text-to-Speech	AI-generated emergency voice alerts
+Multimodal Reasoning	Combines image/video + location + context
+Vision Intelligence	Detects and classifies incidents
+Natural Language	Generates situational explanations
+Translation	Native multilingual output
+Text-to-Speech	AI voice alerts for authorities
 Low Latency	Real-time emergency workflows
 
-Gemini 3 enables SustAInxt to operate as a single, intelligent decision engine — not fragmented tools.
+SustAInxt does not rely on multiple AI tools — Gemini 3 alone powers the full intelligence chain.
 
-🆚 Comparison: SustAInxt vs Traditional Systems
-Aspect	Traditional Systems	SustAInxt (Gemini 3)
-Reporting	Manual calls	AI media analysis
-Response Speed	Slow	Near real-time
-Severity Assessment	Human judgment	AI-driven
-Language Support	Limited	Multilingual AI
-Map Intelligence	Static	Live GIS
-Automation	Low	End-to-end
-Sustainability	Resource-heavy	Optimized dispatch
-🏗️ Technology Stack
-AI & Intelligence
+🔍 Comparison with Existing Systems
+Feature	Traditional Systems	SustAInxt (Gemini 3)
+Incident Reporting	Phone calls	AI media analysis
+Response Speed	Delayed	Near real-time
+Severity Detection	Manual	AI-driven
+Language Support	Limited	Native multilingual
+Mapping	Static	Live GIS
+Automation	Partial	End-to-end
+Scalability	Call-center bound	Cloud-native
+Sustainability	Resource-heavy	Optimized & digital
+🏗️ Architecture Overview
 
-Google Gemini 3 (Vision, Language, TTS)
+Flow:
+Citizen → AI Analysis → Language Adaptation → GIS Mapping → Authority Alert → Community Awareness
 
-Google Genkit
+Core Layers:
 
+Frontend: Next.js dashboard (web/mobile responsive)
+
+AI Layer: Genkit + Gemini 3 Flash
+
+Mapping: OpenStreetMap + Leaflet
+
+Communication: Voice/SMS ready pipeline
+
+Data Layer: Secure logging & analytics
+
+🧰 Technology Stack
 Frontend
 
 Next.js 15 (App Router)
@@ -127,74 +98,79 @@ Tailwind CSS
 
 ShadCN UI
 
-Mapping
+AI & Intelligence
+
+Google Gemini 3 Flash
+
+Genkit (Google AI orchestration)
+
+Maps & Visualization
 
 OpenStreetMap
 
-Leaflet / React-Leaflet
+Leaflet (React-Leaflet)
 
-Communication
+Optional Integrations
 
-Twilio (Voice & SMS alerts)
+Twilio (voice/SMS alerts)
 
-Media
+Cloudinary (media handling)
 
-Cloudinary (Optional)
+🎯 Sustainability Alignment
 
-Deployment
+SustAInxt supports:
 
-Vercel
+SDG 11: Sustainable Cities & Communities
+
+SDG 12: Responsible Resource Utilization
+
+By reducing manual processes, unnecessary dispatches, and response delays, SustAInxt optimizes emergency resources while saving lives.
+
+🚀 Getting Started (Local Setup)
+Prerequisites
+
+Node.js 18+
+
+Gemini API Key (https://ai.google.dev
+)
+
+Setup
+npm install
+npm run dev
+
+
+Create a .env file:
+
+GEMINI_API_KEY=your_api_key_here
+
+
+Open:
+
+http://localhost:9002
 
 🔄 End-to-End Flow
-Upload Media → Gemini 3 Analysis → Severity Detection
-→ Situational Awareness → Multilingual Output
-→ GIS Visualization → Authority Dispatch
+Upload Media
+→ Gemini 3 Analysis
+→ Severity & Context
+→ Multilingual Guidance
+→ Map Visualization
+→ Authority Alert
+→ Community Feed
 
 📱 Supported Platforms
 
 Web (Desktop & Mobile)
 
-Android & iOS browsers
+Android (PWA-ready)
 
-Responsive UI
-
-🌐 Language Support
-
-English
-
-Hindi
-
-Regional Indian languages
-
-Global language-ready (Gemini 3)
+iOS (PWA-ready)
 
 🏆 Accomplishments
 
-Built a complete emergency response pipeline using only Gemini 3
+Fully AI-driven emergency intelligence pipeline
 
-Unified vision, language, and voice intelligence
+Built entirely on Gemini 3
 
-Designed for sustainability and smart-city scalability
+Multilingual inclusivity by design
 
-📈 What We Learned
-
-Multimodal AI significantly reduces response latency
-
-Language inclusivity is critical in emergency systems
-
-Unified AI models outperform fragmented pipelines
-
-🔮 What’s Next
-
-Predictive risk modeling using historical data
-
-Government dashboard integration
-
-IoT & CCTV stream analysis
-
-City-scale pilot deployments
-
-📄 License
-
-SustAInxt
-Built for public safety, sustainability, and smarter cities.
+Hackathon-ready, scalable architecture
