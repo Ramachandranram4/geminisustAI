@@ -16,7 +16,7 @@ const SummarizeForAuthorityInputSchema = z.object({
   severity: z.string(),
   situationAnalysis: z.string(),
 });
-
+//summarize function
 const SummarizeForAuthorityOutputSchema = z.object({
   summary: z.string().describe('Plain text emergency message in native script.'),
   language: z.string().describe('The language used.'),
